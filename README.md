@@ -1,4 +1,4 @@
-Asserting for non-visibility can lead to false positives.
+Asserting for non-visibility in the browser can lead to false positives.
 
 Consider how elements load [asynchronously](https://en.wikipedia.org/wiki/Ajax_(programming)) in the modern web. In this repo, [index.html](index.html) features an element with text "early", that is loaded immediately, and an element with text "late" that takes 1/4 of a second to load.
 
