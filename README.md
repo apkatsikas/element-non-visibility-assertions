@@ -4,7 +4,7 @@ Consider how elements load [asynchronously](https://en.wikipedia.org/wiki/Ajax_(
 
 ![page example](images/page.gif)
 
-To the eye, it seems to load almost instantly, but our test, which expects that is NOT visibile, passes. 
+To the eye, it seems to load almost instantly, but our test (we're using Playwright in this example), which expects that is NOT visibile, passes. 
 
 ```
 await expect(page.getByText('late')).not.toBeVisible();
