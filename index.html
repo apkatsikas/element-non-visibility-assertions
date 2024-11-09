@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delayed Element Example</title>
+</head>
+<body>
+    <header id="early">early</header>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const lateParagraph = document.createElement('p');
+                lateParagraph.id = 'late';
+                lateParagraph.textContent = 'late';
+                
+                document.body.appendChild(lateParagraph);
+            }, 250);
+        });
+    </script>
+</body>
+</html>
